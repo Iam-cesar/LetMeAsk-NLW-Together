@@ -1,0 +1,32 @@
+@import './variaveis';
+@import './mixins';
+
+.button {
+  margin-top: 64px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: $cor-principal;
+  color: $branco;
+  padding: 0 32px;
+
+  @include flex-center;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter 200ms;
+
+  img {
+    margin-right: 8px;
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &::disable {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
