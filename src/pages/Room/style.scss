@@ -1,5 +1,5 @@
-@import './variaveis.scss';
-@import './mixins.scss';
+@import '../../styles/variaveis.scss';
+@import '../../styles/mixins.scss';
 
 #page-room {
   header {
@@ -14,13 +14,21 @@
       >img {
         max-height: 45px;
       }
+
+      >div {
+        display: flex;
+        gap: 16px;
+
+        button {
+          height: 40px;
+        }
+      }
     }
   }
 
   main {
     max-width: 800px;
     margin: 0 auto;
-
 
     .room-title {
       margin: 32px 0 24px;
@@ -45,6 +53,10 @@
       }
     }
 
+    .question-list {
+      margin-top: 32px;
+    }
+
     form {
       textarea {
         width: 100%;
@@ -64,6 +76,7 @@
         margin-top: 16px;
 
         .user-info {
+
           display: flex;
           align-items: center;
 
