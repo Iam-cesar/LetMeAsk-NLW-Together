@@ -11,6 +11,20 @@
     margin-top: 8px;
   }
 
+
+  &.highlighted {
+    background-color: $isHighlighted;
+    border: 1px solid $cor-principal-opacidade-90;
+
+    footer .user-info span {
+      color: $cinza-escuro;
+    }
+  }
+
+  &.answered {
+    background-color: $isAnswered;
+  }
+
   p {
     color: $cinza-escuro;
   }
@@ -36,6 +50,11 @@
         color: $cinza-medio;
         font-size: 14px;
       }
+    }
+
+    >div {
+      display: flex;
+      gap: 16px;
     }
 
     button {
