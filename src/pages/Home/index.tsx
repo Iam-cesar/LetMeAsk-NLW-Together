@@ -1,14 +1,14 @@
 import { FormEvent, useContext, useState } from 'react'
 import { useHistory } from 'react-router'
-import { database } from '../services/firebase'
+import { database } from '../../services/firebase'
 
-import illustration from '../assets/images/illustration.svg'
-import logoApp from '../assets/images/logo.svg'
-import googleIcon from '../assets/images/google-icon.svg'
-import '../styles/auth.scss'
+import illustration from '../../assets/images/illustration.svg'
+import logoApp from '../../assets/images/logo.svg'
+import googleIcon from '../../assets/images/google-icon.svg'
+import '../../styles/auth.scss'
 
-import { Button } from '../components/Button'
-import { AuthContext } from '../contexts/Authcontext'
+import { Button } from '../../components/Button'
+import { AuthContext } from '../../contexts/Authcontext'
 
 export function Home(){
 
@@ -34,6 +34,11 @@ export function Home(){
 
 		if (!roomRef.exists()){
 			alert('Room does not exists.')
+			return
+		}
+
+		if (roomRef.val().endedAt){
+			alert('Room already closed.')
 			return
 		}
 

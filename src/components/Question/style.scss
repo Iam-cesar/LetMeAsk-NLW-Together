@@ -1,0 +1,86 @@
+@import '../../styles/variaveis.scss';
+@import '../../styles/mixins.scss';
+
+.question {
+  background-color: $branco-opacidade-80;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px $branco-opacidade-50;
+  padding: 24px;
+
+  &+.question {
+    margin-top: 8px;
+  }
+
+
+  &.highlighted {
+    background-color: $isHighlighted;
+    border: 1px solid $cor-principal-opacidade-90;
+
+    footer .user-info span {
+      color: $cinza-escuro;
+    }
+  }
+
+  &.answered {
+    background-color: $isAnswered;
+  }
+
+  p {
+    color: $cinza-escuro;
+  }
+
+  footer {
+    @include flex-center(space-between);
+
+    margin-top: 24px;
+
+    .user-info {
+
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+      }
+
+      span {
+        margin-left: 8px;
+        color: $cinza-medio;
+        font-size: 14px;
+      }
+    }
+
+    >div {
+      display: flex;
+      gap: 16px;
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      transition: filter 200ms;
+
+      &.like-button {
+        display: flex;
+        align-items: flex-end;
+        color: $cinza-medio;
+        gap: 8px;
+      }
+
+      &.liked {
+        color: $cor-principal-opacidade-90;
+
+        svg path {
+          stroke: $cor-principal-opacidade-90;
+        }
+      }
+
+      &:hover {
+        filter: brightness(.7);
+      }
+    }
+  }
+}
