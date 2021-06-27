@@ -14,10 +14,9 @@ Tabela de conteúdos
 =================
 <p align="center">
 	<a href="#sobre">Sobre</a> •
-	<a href="#localmente">Como rodar localmente</a> •
 	<a href="#objetivo">Objetivo</a> •
 	<a href="#tecnologias">Tecnologias</a> •
-	<a href="#licenc-a">Licença</a> •
+	<a href="#licença">Licença</a> •
 	<a href="#autor">Autor</a>
 </p>
 
@@ -44,7 +43,7 @@ Tecnologias
 <a href="https://sass-lang.com/">
 	<img src="https://img.shields.io/static/v1?label=&message=Sass&color=pink" alt="sass"></a>
 <a href="https://pt-br.reactjs.org/">
-	<img src="https://img.shields.io/static/v1?label=&message=React js&color=informacional" alt="reactjs">
+	<img src="https://img.shields.io/static/v1?label=&message=React js&color=9cf" alt="reactjs">
 </a>
 
 Objetivo
