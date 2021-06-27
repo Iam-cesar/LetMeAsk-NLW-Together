@@ -14,10 +14,10 @@ Tabela de conteúdos
 =================
 <p align="center">
 	<a href="#sobre">Sobre</a> •
+	<a href="#localmente">Como rodar localmente</a> •
 	<a href="#objetivo">Objetivo</a> •
 	<a href="#tecnologias">Tecnologias</a> •
-	<a href="#contribuicao">Contribuição</a> •
-	<a href="#licenca">Licença</a> •
+	<a href="#licenc-a">Licença</a> •
 	<a href="#autor">Autor</a>
 </p>
 
@@ -26,7 +26,7 @@ Sobre
 <p>
 	O letmeask é uma aplicação desenvolvida para pessoas que fazem live e que desejam coletar as perguntas da sua
 	audiência. O aplicativo permite que a comunidade envie perguntas e as outras pessoas podem curtir e o apresentador tem
-	acesso as maiores duvidas da sua comunidade.
+	acesso as maiores duvidas do seu publico.
 </p>
 
 Imagens
@@ -39,12 +39,13 @@ Imagens
 Tecnologias
 =================
 
-<!-- https://img.shields.io/static/v1?label=<LABEL>&color=<COLOR>&style=<STYLE>&logo=<LOGO> -->
-
 <a href="https://www.typescriptlang.org/">
 	<img src="https://img.shields.io/static/v1?label=&message=Typescript&color=blue" alt="typescript"></a>
-<a href="https://sass-lang.com/">Sass</a>
-<a href="https://pt-br.reactjs.org/">React JS</a>
+<a href="https://sass-lang.com/">
+	<img src="https://img.shields.io/static/v1?label=&message=Sass&color=pink" alt="sass"></a>
+<a href="https://pt-br.reactjs.org/">
+	<img src="https://img.shields.io/static/v1?label=&message=React js&color=informacional" alt="reactjs">
+</a>
 
 Objetivo
 =================
@@ -55,13 +56,10 @@ Objetivo
 	que eu busquei prestar mais atenção e esse evento me trouxe bastante conhecimento,
 	que eu pretendo usar em todo projeto que eu for trabalhar.</p>
 
-
 Licença
 =================
-
-<p>This project could be used by anyone! MIT License</p>
+<p>Este projeto pode ser usado por qualquer pessoa - Licença MIT</p>
 
 Autor
 =================
-
 <p>Feito com ♥ por <a href="https://www.linkedin.com/in/c%C3%A9sar-augusto-1459ab1b2/">Cesar Augusto</a></p>
