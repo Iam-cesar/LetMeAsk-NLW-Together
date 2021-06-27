@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://letmeask-nlw-c05b8.web.app/">
-		<img src="./src/assets/image/logo.png" height="150" width="175" alt="logo let me ask" />
+		<img src="./src/assets/images/logo.svg" height="150" width="175" alt="logo let me ask" />
 	</a>
 </p>
 
