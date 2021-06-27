@@ -43,8 +43,11 @@ Tecnologias
 
 <a href="https://www.typescriptlang.org/">
 	<img src="https://img.shields.io/static/v1?label=&message=Typescript&color=blue" alt="typescript"></a>
-<a href="https://sass-lang.com/">Sass</a>
-<a href="https://pt-br.reactjs.org/">React JS</a>
+<a href="https://sass-lang.com/">
+	<img src="https://img.shields.io/static/v1?label=&message=Sass&color=blue" alt="sass"></a>
+<a href="https://pt-br.reactjs.org/">
+	<img src="https://img.shields.io/static/v1?label=&message=React js&color=blue" alt="reactjs">
+</a>
 
 Objetivo
 =================
