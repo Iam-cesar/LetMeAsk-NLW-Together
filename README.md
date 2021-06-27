@@ -13,11 +13,22 @@
 Tabela de conteúdos
 =================
 <p align="center">
+	<a href="#sobre">Sobre</a> •
 	<a href="#objetivo">Objetivo</a> •
 	<a href="#tecnologias">Tecnologias</a> •
 	<a href="#contribuicao">Contribuição</a> •
 	<a href="#licenca">Licença</a> •
 	<a href="#autor">Autor</a>
+</p>
+
+Sobre
+=================
+<p>
+	O letmeask é uma aplicação desenvolvida para pessoas que fazem live e que desejam coletar as perguntas da sua
+	audiência.
+
+	O aplicativo permite que a comunidade envie perguntas e as outras pessoas podem curtir e o apresentador tem acesso as
+	maiores duvidas da sua comunidade.
 </p>
 
 Imagens
@@ -26,6 +37,13 @@ Imagens
 	<img src="./src/assets/readme-images/letmeaskpergunta.png" alt="lista de perguntas" height="250" width="200">
 	<img src="./src/assets/readme-images/letmeaskAdmin.png" alt="pagina de admin" height="250" width="200">
 </div>
+
+Tecnologias
+=================
+
+<a href="https://www.typescriptlang.org/">Typescript</a>
+<a href="https://sass-lang.com/">Sass</a>
+<a href="https://pt-br.reactjs.org/">React JS</a>
 
 Objetivo
 =================
@@ -36,34 +54,13 @@ Objetivo
 	que eu busquei prestar mais atenção e esse evento me trouxe bastante conhecimento,
 	que eu pretendo usar em todo projeto que eu for trabalhar.</p>
 
-Tecnologias
+
+Licença
 =================
 
-<a href="https://www.typescriptlang.org/">Typescript</a>
-<a href="https://sass-lang.com/">Sass</a>
-<a href="https://pt-br.reactjs.org/">React JS</a>
+<p>This project could be used by anyone! MIT License</p>
 
-<p align="center">
-	<img alt="GitHub top language"
-		src="https://img.shields.io/github/languages/top/lukemorales/rocketshoes-react-native.svg">
+Autor
+=================
 
-	<img alt="GitHub language count"
-		src="https://img.shields.io/github/languages/count/lukemorales/rocketshoes-react-native.svg">
-
-	<a
-		href="https://www.codacy.com/app/lukemorales/rocketshoes-react-native?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lukemorales/rocketshoes-react-native&amp;utm_campaign=Badge_Grade">
-		<img alt="Codacy grade" src="https://img.shields.io/codacy/grade/e4cc1482460841bdaa99c2e75e01f0bc.svg">
-	</a>
-
-	<img alt="Repository size" src="https://img.shields.io/github/repo-size/lukemorales/rocketshoes-react-native.svg">
-	<a href="https://github.com/lukemorales/rocketshoes-react-native/commits/master">
-		<img alt="GitHub last commit"
-			src="https://img.shields.io/github/last-commit/lukemorales/rocketshoes-react-native.svg">
-	</a>
-
-	<a href="https://github.com/lukemorales/rocketshoes-react-native/issues">
-		<img alt="Repository issues" src="https://img.shields.io/github/issues/lukemorales/rocketshoes-react-native.svg">
-	</a>
-
-	<img alt="GitHub" src="https://img.shields.io/github/license/lukemorales/rocketshoes-react-native.svg">
-</p>
+<p>Feito com ♥ por <a href="https://www.linkedin.com/in/c%C3%A9sar-augusto-1459ab1b2/">Cesar Augusto</a></p>
