@@ -25,10 +25,8 @@ Sobre
 =================
 <p>
 	O letmeask é uma aplicação desenvolvida para pessoas que fazem live e que desejam coletar as perguntas da sua
-	audiência.
-
-	O aplicativo permite que a comunidade envie perguntas e as outras pessoas podem curtir e o apresentador tem acesso as
-	maiores duvidas da sua comunidade.
+	audiência. O aplicativo permite que a comunidade envie perguntas e as outras pessoas podem curtir e o apresentador tem
+	acesso as maiores duvidas da sua comunidade.
 </p>
 
 Imagens
