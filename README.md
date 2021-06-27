@@ -39,7 +39,10 @@ Imagens
 Tecnologias
 =================
 
-<a href="https://www.typescriptlang.org/">Typescript</a>
+
+
+<a href="https://www.typescriptlang.org/">
+	<img src="https://img.shields.io/static/v1?label=Typescript&color=05299E" alt="typescript">Typescript</a>
 <a href="https://sass-lang.com/">Sass</a>
 <a href="https://pt-br.reactjs.org/">React JS</a>
 
