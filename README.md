@@ -31,8 +31,9 @@ Tabela de conteúdos
 - [x] Responsivo
 
 <div align="center">
-	<img src="./src/assets/readme-images/letmeaskhome.png" alt="pagina principal da aplicação" height="400" width="350">
-	<img src="./src/assets/readme-images/letmeask-perguntas.png" alt="pagina onde se faz as perguntas">
-	<img src="./src/assets/readme-images/letmeaskpergunta.png" alt="lista de perguntas">
-	<img src="./src/assets/readme-images/letmeaskAdmin.png" alt="pagina de admin">
+	<img src="./src/assets/readme-images/letmeaskhome.png" alt="pagina principal da aplicação" height="350" width="300">
+	<img src="./src/assets/readme-images/letmeask-perguntas.png" alt="pagina onde se faz as perguntas" height="350"
+		width="300">
+	<img src="./src/assets/readme-images/letmeaskpergunta.png" alt="lista de perguntas" height="350" width="300">
+	<img src="./src/assets/readme-images/letmeaskAdmin.png" alt="pagina de admin" height="350" width="300">
 </div>
