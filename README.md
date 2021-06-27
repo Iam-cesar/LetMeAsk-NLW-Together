@@ -8,4 +8,5 @@
 
 <h4 align="center">Projeto criado na semana NLW together sexta edição 🚀</h4>
 
-<img src="https://img.shields.io/badge/React-v17.0.2-#208AAE" alt="versao do react 17.0.2">
+<img src="https://img.shields.io/static/v1?label=<React>&message=<v17.0.2>&color=<#208AAE>"
+	alt="versao do react 17.0.2">
