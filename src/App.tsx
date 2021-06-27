@@ -1,14 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import { Room } from './pages/Room';
+import { Room } from './pages/Room'
 import { Home } from './pages/Home'
 import { NewRoom } from './pages/NewRoom'
-import { AdminRoom } from './pages/AdminRoom';
+import { AdminRoom } from './pages/AdminRoom'
 
 import { AuthContextProvider } from './contexts/Authcontext'
 
-function App() {
-
+function App () {
   return (
     <Router>
       <AuthContextProvider>
@@ -18,9 +17,9 @@ function App() {
           <Route path='/rooms/:id' component={Room} />
           <Route path='/admin/rooms/:id' component={AdminRoom} />
         </Switch>
-      </AuthContextProvider>   
+      </AuthContextProvider>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

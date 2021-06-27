@@ -1,5 +1,5 @@
 
-import { useParams } from "react-router"
+import { useParams } from 'react-router'
 
 import logoImg from '../../assets/images/logo.svg'
 import deleteImg from '../../assets/images/delete.svg'
@@ -12,49 +12,46 @@ import { Button } from '../../components/Button'
 
 import './style.scss'
 import { useRoom } from '../../hooks/useRoom'
-import { database } from "../../services/firebase"
-import { useHistory } from "react-router-dom"
+import { database } from '../../services/firebase'
+import { useHistory } from 'react-router-dom'
 
 type RoomParams = {
   id: string;
 }
 
-export function AdminRoom(){
-
-  const params = useParams<RoomParams>()  
+export function AdminRoom () {
+  const params = useParams<RoomParams>()
   const roomId = params.id
   const { questions, title } = useRoom(roomId)
   const history = useHistory()
 
-  async function handleEndRoom(){
+  async function handleEndRoom () {
     await database.ref(`rooms/${roomId}`).update({
-      endedAt: new Date(),
+      endedAt: new Date()
     })
 
     history.push('/')
   }
 
-  async function handleDeleteQuestion(questionId: string){
-    if (window.confirm("Tem certeza que deseja excuir esta pergunta")){
+  async function handleDeleteQuestion (questionId: string) {
+    if (window.confirm('Tem certeza que deseja excuir esta pergunta')) {
       await database.ref(`rooms/${roomId}/questions/${questionId}`).remove()
     }
   }
 
-  async function handleCheckQuestionAsAsnwered(questionId: string){
+  async function handleCheckQuestionAsAsnwered (questionId: string) {
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
-      isAnswered: true,
+      isAnswered: true
     })
   }
 
-  async function handleHighlightQuestion(questionId: string){
-
+  async function handleHighlightQuestion (questionId: string) {
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
-      isHighlighted: true,
+      isHighlighted: true
     })
-
   }
 
-  return(
+  return (
     <div id="page-room">
       <header>
         <div className="content">
@@ -74,9 +71,9 @@ export function AdminRoom(){
           </span>
         </div>
 
-        <div className="question-list">            
+        <div className="question-list">
           {questions.map((question) => {
-            return(
+            return (
               <Question
                 key={question.id}
                 content={question.content}

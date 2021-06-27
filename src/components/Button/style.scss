@@ -1,37 +1,37 @@
-@import '../../styles/variaveis.scss';
-@import '../../styles/mixins.scss';
+@import "../../styles/variaveis.scss";
+@import "../../styles/mixins.scss";
 
 .button {
-  height: 50px;
-  border-radius: 8px;
-  font-weight: 500;
-  background-color: $cor-principal;
-  color: $branco;
-  padding: 0 32px;
+	height: 50px;
+	border-radius: 8px;
+	font-weight: 500;
+	background-color: $cor-principal;
+	color: $branco;
+	padding: 0 32px;
 
-  @include flex-center;
+	@include flex-center;
 
-  cursor: pointer;
-  border: 0;
+	cursor: pointer;
+	border: 0;
 
-  transition: filter 200ms;
+	transition: filter 200ms;
 
-  img {
-    margin-right: 8px;
-  }
+	img {
+		margin-right: 8px;
+	}
 
-  &.outilined {
-    background-color: $branco;
-    border: 1px solid $cor-principal-opacidade-90;
-    color: $cor-principal-opacidade-90;
-  }
+	&.outilined {
+		background-color: $branco;
+		border: 1px solid $cor-principal-opacidade-90;
+		color: $cor-principal-opacidade-90;
+	}
 
-  &:not(:disabled):hover {
-    filter: brightness(0.9);
-  }
+	&:not(:disabled):hover {
+		filter: brightness(0.9);
+	}
 
-  &::disable {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
+	&::disable {
+		opacity: 0.6;
+		cursor: not-allowed;
+	}
 }

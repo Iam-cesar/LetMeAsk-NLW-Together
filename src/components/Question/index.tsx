@@ -13,15 +13,14 @@ type QuestionProps = {
   children?: ReactNode
 }
 
-export function Question({ 
+export function Question ({
   content,
   author,
   isAnswered = false,
   isHighlighted = false,
-  children,
-}:QuestionProps){
-
-  return(
+  children
+}:QuestionProps) {
+  return (
     <div
       className={cx(
         'question',

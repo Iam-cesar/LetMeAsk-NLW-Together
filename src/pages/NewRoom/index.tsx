@@ -10,32 +10,31 @@ import { database } from '../../services/firebase'
 
 import { useAuth } from '../../hooks/useAuth'
 
-export function NewRoom(){
+export function NewRoom () {
+  const { user } = useAuth()
 
-	const {user} = useAuth()
+  const [newRoom, setNewRoom] = useState('')
 
-	const [newRoom, setNewRoom] = useState('')
-	
-	const history = useHistory()
+  const history = useHistory()
 
-	async function handleCreateRoom(e: FormEvent){
-		e.preventDefault()
+  async function handleCreateRoom (e: FormEvent) {
+    e.preventDefault()
 
-		if (newRoom.trim() === ''){
-			return
-		}
+    if (newRoom.trim() === '') {
+      return
+    }
 
-		const roomRef = database.ref('rooms')
+    const roomRef = database.ref('rooms')
 
-		const firebaseRoom = await roomRef.push({
-			title: newRoom,
-			authorId: user?.id,
-		})
+    const firebaseRoom = await roomRef.push({
+      title: newRoom,
+      authorId: user?.id
+    })
 
-		history.push(`/rooms/${firebaseRoom.key}`)
-	}
+    history.push(`/rooms/${firebaseRoom.key}`)
+  }
 
-	return(
+  return (
 		<div id='page-auth'>
 
 			<aside>
@@ -66,5 +65,5 @@ export function NewRoom(){
 				</div>
 			</main>
 		</div>
-	)
+  )
 }
