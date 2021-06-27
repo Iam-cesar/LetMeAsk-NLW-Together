@@ -8,32 +8,39 @@
 
 <h4 align="center">Projeto criado na semana NLW together sexta edição 🚀</h4>
 
+<h4 align="center">🚧 Let me ask em construção... 🚧</h4>
+
 Tabela de conteúdos
 =================
-<!--ts-->
-* [Sobre](#Sobre)
-* [Tabela de Conteudo](#tabela-de-conteudo)
-* [Instalação](#instalacao)
-* [Como usar](#como-usar)
-* [Pre Requisitos](#pre-requisitos)
-* [Local files](#local-files)
-* [Remote files](#remote-files)
-* [Tecnologias](#tecnologias)
-<!--te-->
-
-<h4 align="center">
-	🚧 Let me ask 🚀 Em construção... 🚧
-</h4>
-
+<p align="center">
+	<a href="#objetivo">Objetivo</a> •
+	<a href="#tecnologias">Tecnologias</a> •
+	<a href="#contribuicao">Contribuição</a> •
+	<a href="#licenca">Licença</a> •
+	<a href="#autor">Autor</a>
+</p>
 
 - [x] Criação de salas para perguntas
 - [x] Modo noturno
 - [x] Responsivo
 
+
+Imagens
+=================
 <div align="center">
-	<img src="./src/assets/readme-images/letmeaskhome.png" alt="pagina principal da aplicação" height="400" width="600">
-	<img src="./src/assets/readme-images/letmeask-perguntas.png" alt="pagina onde se faz as perguntas" height="350"
-		width="300">
-	<img src="./src/assets/readme-images/letmeaskpergunta.png" alt="lista de perguntas" height="350" width="300">
-	<img src="./src/assets/readme-images/letmeaskAdmin.png" alt="pagina de admin" height="350" width="300">
+	<img src="./src/assets/readme-images/letmeaskpergunta.png" alt="lista de perguntas" height="250" width="200">
+	<img src="./src/assets/readme-images/letmeaskAdmin.png" alt="pagina de admin" height="250" width="200">
 </div>
+
+Objetivo
+=================
+
+<p>O objetivo principal de eu ter focado nesse nlw, foi observar de
+	perto como é construido e estruturado um projeto real, padrões de projeto,
+	composição das pastas e fluxo de desenvolvimento foram os aprendizados principais
+	que eu busquei prestar mais atenção e esse evento me trouxe bastante conhecimento,
+	que eu pretendo usar em todo projeto que eu for trabalhar.</p>
+
+
+Tecnologias
+=================
