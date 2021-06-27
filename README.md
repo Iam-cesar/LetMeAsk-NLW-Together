@@ -25,10 +25,8 @@ Sobre
 =================
 <p>
 	O letmeask é uma aplicação desenvolvida para pessoas que fazem live e que desejam coletar as perguntas da sua
-	audiência.
-
-	O aplicativo permite que a comunidade envie perguntas e as outras pessoas podem curtir e o apresentador tem acesso as
-	maiores duvidas da sua comunidade.
+	audiência. O aplicativo permite que a comunidade envie perguntas e as outras pessoas podem curtir e o apresentador tem
+	acesso as maiores duvidas da sua comunidade.
 </p>
 
 Imagens
@@ -41,7 +39,10 @@ Imagens
 Tecnologias
 =================
 
-<a href="https://www.typescriptlang.org/">Typescript</a>
+
+
+<a href="https://www.typescriptlang.org/">
+	<img src="https://img.shields.io/static/v1?label=Typescript&color=05299E" alt="typescript">Typescript</a>
 <a href="https://sass-lang.com/">Sass</a>
 <a href="https://pt-br.reactjs.org/">React JS</a>
 
