@@ -1,31 +1,30 @@
-@import '../../styles/variaveis.scss';
-@import '../../styles/mixins.scss';
-
+@import "../../styles/variaveis.scss";
+@import "../../styles/mixins.scss";
 
 .room-code {
-  height: 40px;
-  border-radius: 8px;
-  overflow: hidden;
+	height: 40px;
+	border-radius: 8px;
+	overflow: hidden;
 
-  background-color: $branco;
-  border: 1px solid $cor-principal-opacidade-90;
-  cursor: pointer;
+	background-color: $branco;
+	border: 1px solid $cor-principal-opacidade-90;
+	cursor: pointer;
 
-  display: flex;
+	display: flex;
 
-  div {
-    background-color: $cor-principal-opacidade-90;
-    padding: 12px;
-    @include flex-center;
-  }
+	div {
+		background-color: $cor-principal-opacidade-90;
+		padding: 12px;
+		@include flex-center;
+	}
 
-  span {
-    display: block;
-    align-self: center;
-    flex: 1;
-    padding: 0 16px 0 12px;
-    width: 240px;
-    font-size: 14px;
-    font-weight: 500;
-  }
+	span {
+		display: block;
+		align-self: center;
+		flex: 1;
+		padding: 0 16px 0 12px;
+		width: 240px;
+		font-size: 14px;
+		font-weight: 500;
+	}
 }

@@ -10,76 +10,71 @@ import '../../styles/auth.scss'
 import { Button } from '../../components/Button'
 import { AuthContext } from '../../contexts/Authcontext'
 
-export function Home(){
+export function Home () {
+  const history = useHistory()
+  const { signInWithGoogle, user } = useContext(AuthContext)
+  const [roomCode, setRoomCode] = useState('')
 
-	const history = useHistory()
-	const { signInWithGoogle, user } = useContext(AuthContext);
-	const [roomCode, setRoomCode] = useState('')
+  async function handleCreateRoom () {
+    user || await signInWithGoogle() // caso nao haja usuario logado dispara a funcao
 
-	async function handleCreateRoom(){
+    history.push('/rooms/new')
+  }
 
-		user || await signInWithGoogle() // caso nao haja usuario logado dispara a funcao
+  async function handleJoinRoom (event: FormEvent) {
+    event.preventDefault()
 
-		history.push('/rooms/new')
-	}
+    if (roomCode.trim() === '') {
+      return
+    }
 
-	async function handleJoinRoom(event: FormEvent){
-		event.preventDefault()
+    const roomRef = await database.ref(`rooms/${roomCode}`).get()
 
-		if (roomCode.trim() === ''){
-			return
-		}
+    if (!roomRef.exists()) {
+      alert('Room does not exists.')
+      return
+    }
 
-		const roomRef = await database.ref(`rooms/${roomCode}`).get()
+    if (roomRef.val().endedAt) {
+      alert('Room already closed.')
+      return
+    }
 
-		if (!roomRef.exists()){
-			alert('Room does not exists.')
-			return
-		}
+    history.push(`/rooms/${roomCode}`)
+  }
 
-		if (roomRef.val().endedAt){
-			alert('Room already closed.')
-			return
-		}
+  return (
+    <div id='page-auth'>
+      <aside>
+        <img src={illustration} alt="simbolizando perguntas e respostas" />
+        <strong>Toda pergunta tem uma resposta.</strong>
+        <p>Aprenda e compartilhe conhecimento com outras pessoas</p>
+      </aside>
 
-		history.push(`/rooms/${roomCode}`)
-	}
+      <main>
+        <div className="main-content">
 
-	return (
-		<div id='page-auth'>
+          <img src={logoApp} alt="letmeask" />
 
-			<aside>
-				<img src={illustration} alt="simbolizando perguntas e respostas" />
-				<strong>Toda pergunta tem uma resposta.</strong>
-				<p>Aprenda e compartilhe conhecimento com outras pessoas</p>
-			</aside>
+          <button className="create-room" onClick={handleCreateRoom}>
+            <img src={googleIcon} alt="logo do google" />
+            Crie sua sala com o Google
+          </button>
 
-			<main>
-				<div className="main-content">
+          <div className="separator">Ou entre em uma sala</div>
 
-					<img src={logoApp} alt="letmeask" />
-
-					<button className="create-room" onClick={handleCreateRoom}>
-						<img src={googleIcon} alt="logo do google" />
-						Crie sua sala com o Google
-					</button>
-
-					<div className="separator">Ou entre em uma sala</div>
-
-					<form onSubmit={handleJoinRoom}>
-						<input
-							type="text"
-							placeholder="Digite o codigo da sala"
-							onChange={event => setRoomCode(event.target.value)}				
-						/>
-
-						<Button type="submit">
-							Entrar na sala
-						</Button>
-
-					</form>
-				</div>
-			</main>
-		</div>
-	)
+          <form onSubmit={handleJoinRoom}>
+            <input
+              type="text"
+              placeholder="Digite o codigo da sala"
+              onChange={event => setRoomCode(event.target.value)}
+            />
+            <Button type="submit">
+              Entrar na sala
+            </Button>
+          </form>
+        </div>
+      </main>
+    </div>
+  )
 }
