@@ -43,7 +43,7 @@ Tecnologias
 <a href="https://sass-lang.com/">
 	<img src="https://img.shields.io/static/v1?label=&message=Sass&color=pink" alt="sass"></a>
 <a href="https://pt-br.reactjs.org/">
-	<img src="https://img.shields.io/static/v1?label=&message=ReactJs&color=informacional" alt="reactjs">
+	<img src="https://img.shields.io/static/v1?label=&message=ReactJs&color=9cf" alt="reactjs">
 </a>
 
 Objetivo
